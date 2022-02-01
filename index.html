@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- added custom google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <!-- linked jquery/moment cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <link rel="stylesheet" href="./Assets/css/style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <!-- Jumbotron -->
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <!-- Jumbotron Ends-->
+  <div class="container">
+    <!-- Timeblocks -->
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1 ">9AM</div>
+      <textarea id="9-am-event" class="col-8 col-md-10 description" data="09"></textarea>
+      <button type="button" id="9-am-btn" class="btn saveBtn col-2 col-md-1"><!--added a clipboard icon--> <i class='fas fa-clipboard-list' style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">10AM</div>
+      <textarea id="10-am-event" class="col-8 col-md-10 description" data="10"></textarea>
+      <button type="button" id="10-am-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">11AM</div>
+      <textarea id="11-am-event" class="col-8 col-md-10 description" data="11"></textarea>
+      <button type="button" id="11-am-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">12PM</div>
+      <textarea id="12-pm-event" class="col-8 col-md-10 description" data="12"></textarea>
+      <button type="button" id="12-pm-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">1PM</div>
+      <textarea id="1-pm-event" class="col-8 col-md-10 description" data="13"></textarea>
+      <button type="button" id="1-pm-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">2PM</div>
+      <textarea id="2-pm-event" class="col-8 col-md-10 description" data="14"></textarea>
+      <button type="button" id="2-pm-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">3PM</div>
+      <textarea id="3-pm-event" class="col-8 col-md-10 description" data="15"></textarea>
+      <button type="button" id="3-pm-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">4PM</div>
+      <textarea id="4-pm-event" class="col-8 col-md-10 description" data="16"></textarea>
+      <button type="button" id="4-pm-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+
+    <div class="row time-block">
+      <div class="hour col-2 col-md-1">5PM</div>
+      <textarea id="5-pm-event" class="col-8 col-md-10 description" data="17"></textarea>
+      <button type="button" id="5-pm-btn" class="btn saveBtn col-2 col-md-1"><i class='fas fa-clipboard-list'
+          style="font-size: 28px;"></i></button>
+    </div>
+    <!-- Timeblocks ends here -->
+
+    <!-- Moment script to update time on timeblock-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="Assets/js/doingthings.js"></script>
+  </div>
+
+
+</body>
+
+</html>

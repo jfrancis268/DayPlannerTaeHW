@@ -1,0 +1,93 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  /*changed the background color*/
+  background-color: #C0E5E6;
+}
+  /*added a custom font to the jumbotron*/
+header  {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+/*added a custom font to the time blocks*/
+.time-block {
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  border-radius: 15px;
+}
+/*changed the border top color to have it blend with the background*/
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid #C0E5E6;
+}
+/*changed the background to transparent to have it blend into the body background and
+  also stylized the border top by making it a ridge instead of dotted lines*/
+.hour {
+  background-color: transparent;
+  color: #000000;
+  border-top: 4mm ridge #1D3557;}
+
+/*changed the background and text colors for the past, present and future*/
+.past {
+  background-color: #eafffb ;
+  color: #457B9D;
+}
+
+.present {
+  background-color: #A8DADC;
+  color: #f4f8dd;
+}
+
+.future {
+  background-color: #457B9D;
+  color: #c1d2d3;
+}
+
+/*changed the border left to a ridge and also changed the color of it. I also changed the background color of the button*/
+.saveBtn {
+  border-left: 3mm ridge #246d9b;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #1D3557;
+  color: white;
+}
+
+.saveBtn:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/*changed the color of the icon and added a border color to add a bit of contrast for hovers*/
+.saveBtn:hover{
+  color: #A8DADC;
+  border-color: #E63946;
+}
+
+/*there's definitely a better way to do this but I got his from the inspect tool on chrome to help me align the clipboard icon on the button.
+  Not quite sure how I found it but... it works.*/
+.fa-clipboard-list:before {
+  content: "\f46d";
+  margin-left: -8px;
+}
